@@ -66,7 +66,48 @@
         .duration { color: var(--text-muted); }
         h2 { font-size: 1.25rem; margin-bottom: 0.5rem; }
         .description { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem; }
+        .player-wrapper { display: flex; flex-direction: column; gap: 0.5rem; }
         audio { width: 100%; height: 40px; border-radius: 8px; }
+        .speed-bar {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 0.5rem;
+            margin-top: 0.25rem;
+        }
+        .speed-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        .speed-pill-group {
+            display: inline-flex;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 2px;
+            gap: 2px;
+        }
+        .speed-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.55rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .speed-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.08);
+        }
+        .speed-btn.active {
+            background: var(--accent);
+            color: #0f172a;
+            font-weight: 700;
+        }
     </style>
 </head>
 <body>
@@ -83,11 +124,23 @@
         <article class="episode">
             <div class="ep-header">
                 <span class="category">Strategy</span>
-                <span class="duration">12:05</span>
+                <span class="duration">08:46</span>
             </div>
             <h2>Market Entry Attractiveness and Feasibility Matrix</h2>
             <p class="description">Masterclass briefing decomposing market entry strategy across physical trade friction, the 2x2 Attractiveness vs Feasibility matrix, TAM to SOM waterfall sizing, and napkin break-even market share math.</p>
-            <audio controls preload="metadata" src="episodes/Strategy_Market_Entry_Attractiveness_and_Feasibility_Matrix.mp3"></audio>
+            <div class="player-wrapper">
+                <audio id="audio-0" controls preload="metadata" src="episodes/Strategy_Market_Entry_Attractiveness_and_Feasibility_Matrix.mp3"></audio>
+                <div class="speed-bar">
+                    <span class="speed-label">Speed:</span>
+                    <div class="speed-pill-group">
+                        <button type="button" class="speed-btn active" data-speed="1" onclick="changePlaybackSpeed('audio-0', 1, this)">1x</button>
+                        <button type="button" class="speed-btn" data-speed="1.25" onclick="changePlaybackSpeed('audio-0', 1.25, this)">1.25x</button>
+                        <button type="button" class="speed-btn" data-speed="1.5" onclick="changePlaybackSpeed('audio-0', 1.5, this)">1.5x</button>
+                        <button type="button" class="speed-btn" data-speed="1.75" onclick="changePlaybackSpeed('audio-0', 1.75, this)">1.75x</button>
+                        <button type="button" class="speed-btn" data-speed="2" onclick="changePlaybackSpeed('audio-0', 2, this)">2x</button>
+                    </div>
+                </div>
+            </div>
         </article>
         
 
@@ -98,9 +151,52 @@
             </div>
             <h2>Ops: Economic Order Quantity and Total Cost Sensitivity</h2>
             <p class="description">A masterclass breakdown of inventory sawtooth cycles, square-root dampening, the commercial flat-bottom weapon, and boardroom case pushbacks.</p>
-            <audio controls preload="metadata" src="episodes/Operations_EOQ_and_Total_Cost_Sensitivity.mp3"></audio>
+            <div class="player-wrapper">
+                <audio id="audio-1" controls preload="metadata" src="episodes/Operations_EOQ_and_Total_Cost_Sensitivity.mp3"></audio>
+                <div class="speed-bar">
+                    <span class="speed-label">Speed:</span>
+                    <div class="speed-pill-group">
+                        <button type="button" class="speed-btn active" data-speed="1" onclick="changePlaybackSpeed('audio-1', 1, this)">1x</button>
+                        <button type="button" class="speed-btn" data-speed="1.25" onclick="changePlaybackSpeed('audio-1', 1.25, this)">1.25x</button>
+                        <button type="button" class="speed-btn" data-speed="1.5" onclick="changePlaybackSpeed('audio-1', 1.5, this)">1.5x</button>
+                        <button type="button" class="speed-btn" data-speed="1.75" onclick="changePlaybackSpeed('audio-1', 1.75, this)">1.75x</button>
+                        <button type="button" class="speed-btn" data-speed="2" onclick="changePlaybackSpeed('audio-1', 2, this)">2x</button>
+                    </div>
+                </div>
+            </div>
         </article>
         
     </main>
+    <script>
+        const savedSpeed = parseFloat(localStorage.getItem('preferredPlaybackSpeed')) || 1;
+
+        function applySpeedToAll(speed) {
+            document.querySelectorAll('audio').forEach(a => {
+                a.playbackRate = speed;
+            });
+            document.querySelectorAll('.speed-btn').forEach(btn => {
+                if (parseFloat(btn.dataset.speed) === speed) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+
+        function changePlaybackSpeed(audioId, speed, clickedBtn) {
+            localStorage.setItem('preferredPlaybackSpeed', speed);
+            applySpeedToAll(speed);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applySpeedToAll(savedSpeed);
+            document.querySelectorAll('audio').forEach(a => {
+                a.addEventListener('play', () => {
+                    const currentPref = parseFloat(localStorage.getItem('preferredPlaybackSpeed')) || 1;
+                    a.playbackRate = currentPref;
+                });
+            });
+        });
+    </script>
 </body>
 </html>
