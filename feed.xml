@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MBA Placement Masterclass</title>
+    <link>https://eeshburner.github.io/mba-audio/</link>
+    <language>en-in</language>
+    <copyright>© 2026 Antigravity</copyright>
+    <itunes:author>Antigravity</itunes:author>
+    <itunes:summary>Auditory Masterclass Audio Briefings for Tier-1 MBA Vocal Case &amp; Technical Placement Preparation.</itunes:summary>
+    <description>Auditory Masterclass Audio Briefings for Tier-1 MBA Vocal Case &amp; Technical Placement Preparation.</description>
+    <itunes:owner>
+      <itunes:name>Antigravity</itunes:name>
+      <itunes:email>mba-audio@antigravity.local</itunes:email>
+    </itunes:owner>
+    <itunes:category text="Business">
+      <itunes:category text="Management"/>
+    </itunes:category>
+    <itunes:explicit>no</itunes:explicit>
+    <item>
+      <title>Ops: Economic Order Quantity and Total Cost Sensitivity</title>
+      <itunes:title>Ops: Economic Order Quantity and Total Cost Sensitivity</itunes:title>
+      <itunes:author>Antigravity</itunes:author>
+      <description>A masterclass breakdown of inventory sawtooth cycles, square-root dampening, the commercial flat-bottom weapon, and boardroom case pushbacks.</description>
+      <itunes:summary>A masterclass breakdown of inventory sawtooth cycles, square-root dampening, the commercial flat-bottom weapon, and boardroom case pushbacks.</itunes:summary>
+      <enclosure url="https://eeshburner.github.io/mba-audio/episodes/Operations_EOQ_and_Total_Cost_Sensitivity.mp3" length="3499102" type="audio/mpeg" />
+      <guid isPermaLink="false">mba_pod_operations_eoq_and_total_cost_sensitivity</guid>
+      <pubDate>Wed, 04 Nov 2026 13:08:14 +0000</pubDate>
+      <itunes:duration>09:42</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+  </channel>
+</rss>

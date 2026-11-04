@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBA Placement Masterclass</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --border: #334155;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0284c7;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2rem;
+        }
+        h1 { font-size: 1.8rem; margin-bottom: 0.5rem; color: #fff; }
+        p.subtitle { color: var(--text-muted); font-size: 1rem; margin-bottom: 1.5rem; }
+        .feed-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .feed-url { font-family: monospace; font-size: 0.85rem; color: var(--accent); word-break: break-all; }
+        button.copy-btn {
+            background: var(--accent);
+            color: #0f172a;
+            font-weight: 600;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button.copy-btn:hover { background: var(--accent-hover); }
+        .episode {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .ep-header { display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; }
+        .category { color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+        .duration { color: var(--text-muted); }
+        h2 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+        .description { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem; }
+        audio { width: 100%; height: 40px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MBA Placement Masterclass</h1>
+        <p class="subtitle">Auditory Masterclass Audio Briefings for Tier-1 MBA Vocal Case & Technical Placement Preparation.</p>
+        <div class="feed-box">
+            <span class="feed-url" id="feed-url">https://eeshburner.github.io/mba-audio/podcast.xml</span>
+            <button class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('feed-url').innerText); alert('Podcast RSS copied! Paste into Apple Podcasts, Pocket Casts, or AntennaPod.');">Copy RSS Feed</button>
+        </div>
+    </header>
+    <main>
+        
+        <article class="episode">
+            <div class="ep-header">
+                <span class="category">Operations</span>
+                <span class="duration">09:42</span>
+            </div>
+            <h2>Ops: Economic Order Quantity and Total Cost Sensitivity</h2>
+            <p class="description">A masterclass breakdown of inventory sawtooth cycles, square-root dampening, the commercial flat-bottom weapon, and boardroom case pushbacks.</p>
+            <audio controls preload="metadata" src="episodes/Operations_EOQ_and_Total_Cost_Sensitivity.mp3"></audio>
+        </article>
+        
+    </main>
+</body>
+</html>
