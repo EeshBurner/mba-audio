@@ -31,15 +31,15 @@
       <itunes:explicit>no</itunes:explicit>
     </item>
     <item>
-      <title>Ops: Economic Order Quantity and Total Cost Sensitivity</title>
-      <itunes:title>Ops: Economic Order Quantity and Total Cost Sensitivity</itunes:title>
+      <title>EOQ and Total Cost Sensitivity</title>
+      <itunes:title>EOQ and Total Cost Sensitivity</itunes:title>
       <itunes:author>Antigravity</itunes:author>
-      <description>A masterclass breakdown of inventory sawtooth cycles, square-root dampening, the commercial flat-bottom weapon, and boardroom case pushbacks.</description>
-      <itunes:summary>A masterclass breakdown of inventory sawtooth cycles, square-root dampening, the commercial flat-bottom weapon, and boardroom case pushbacks.</itunes:summary>
-      <enclosure url="https://eeshburner.github.io/mba-audio/episodes/Operations_EOQ_and_Total_Cost_Sensitivity.mp3" length="3499102" type="audio/mpeg" />
+      <description>Deep auditory masterclass on inventory batching, the flat-bottom total cost sensitivity rule, and MBB case interview pushback defense.</description>
+      <itunes:summary>Deep auditory masterclass on inventory batching, the flat-bottom total cost sensitivity rule, and MBB case interview pushback defense.</itunes:summary>
+      <enclosure url="https://eeshburner.github.io/mba-audio/episodes/Operations_EOQ_and_Total_Cost_Sensitivity.mp3" length="6598049" type="audio/mpeg" />
       <guid isPermaLink="false">mba_pod_operations_eoq_and_total_cost_sensitivity</guid>
       <pubDate>Wed, 04 Nov 2026 13:08:14 +0000</pubDate>
-      <itunes:duration>09:42</itunes:duration>
+      <itunes:duration>18:18</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
