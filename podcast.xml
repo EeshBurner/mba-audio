@@ -19,6 +19,18 @@
     </itunes:category>
     <itunes:explicit>no</itunes:explicit>
     <item>
+      <title>Network Design: Hub-and-Spoke vs Point-to-Point Logistics Architecture</title>
+      <itunes:title>Network Design: Hub-and-Spoke vs Point-to-Point Logistics Architecture</itunes:title>
+      <itunes:author>Antigravity</itunes:author>
+      <description>A masterclass on logistics network design: evaluating spatial consolidation economies vs direct linehaul transit velocity, calculating FTL volume crossover thresholds, and deploying hybrid multi-echelon networks.</description>
+      <itunes:summary>A masterclass on logistics network design: evaluating spatial consolidation economies vs direct linehaul transit velocity, calculating FTL volume crossover thresholds, and deploying hybrid multi-echelon networks.</itunes:summary>
+      <enclosure url="https://eeshburner.github.io/mba-audio/episodes/Operations_Network_Design_Hub-and-Spoke_vs_Point-to-Point_Logistics_Architecture.mp3" length="6781872" type="audio/mpeg" />
+      <guid isPermaLink="false">mba_pod_operations_network_design_hub-and-spoke_vs_point-to-point_logistics_architecture</guid>
+      <pubDate>Fri, 06 Nov 2026 06:37:05 +0000</pubDate>
+      <itunes:duration>18:48</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Pricing Strategies: 3C's and Economic Value to Customer</title>
       <itunes:title>Pricing Strategies: 3C's and Economic Value to Customer</itunes:title>
       <itunes:author>Antigravity</itunes:author>
