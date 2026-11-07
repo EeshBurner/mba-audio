@@ -19,6 +19,18 @@
     </itunes:category>
     <itunes:explicit>no</itunes:explicit>
     <item>
+      <title>Logistics Sourcing: Dedicated Fleet vs 3PL vs 4PL Economics</title>
+      <itunes:title>Logistics Sourcing: Dedicated Fleet vs 3PL vs 4PL Economics</itunes:title>
+      <itunes:author>Antigravity</itunes:author>
+      <description>Operating leverage trade-offs, break-even crossover volume, empty backhaul deadheads, and the 80/20 Core-and-Flex hybrid sourcing framework.</description>
+      <itunes:summary>Operating leverage trade-offs, break-even crossover volume, empty backhaul deadheads, and the 80/20 Core-and-Flex hybrid sourcing framework.</itunes:summary>
+      <enclosure url="https://eeshburner.github.io/mba-audio/episodes/Operations_Logistics_Sourcing_Dedicated_Fleet_vs_3PL_vs_4PL_Economics.mp3" length="6263520" type="audio/mpeg" />
+      <guid isPermaLink="false">mba_pod_operations_logistics_sourcing_dedicated_fleet_vs_3pl_vs_4pl_economics</guid>
+      <pubDate>Sat, 07 Nov 2026 07:06:05 +0000</pubDate>
+      <itunes:duration>17:22</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Network Design: Hub-and-Spoke vs Point-to-Point Logistics Architecture</title>
       <itunes:title>Network Design: Hub-and-Spoke vs Point-to-Point Logistics Architecture</itunes:title>
       <itunes:author>Antigravity</itunes:author>
